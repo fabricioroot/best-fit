@@ -53,12 +53,12 @@ public class AlgorithmStepsThread implements Runnable {
     public void setJDialogNextStep(JDialog jDialogNextStep) {
         this.jDialogNextStep = jDialogNextStep;
     }
-    
+
     public void run() {
         this.jDialogNextStep = new JDialog();
         this.jDialogNextStep.setModalityType(ModalityType.MODELESS);
         this.jDialogNextStep.setModalExclusionType(ModalExclusionType.APPLICATION_EXCLUDE);
-        this.jDialogNextStep.setAlwaysOnTop(true);
+        //this.jDialogNextStep.setAlwaysOnTop(true);
         this.jDialogNextStep.setResizable(false);
         this.jDialogNextStep.setBounds(750, 520, 231, 118);
         this.jDialogNextStep.setDefaultCloseOperation(JDialog.DO_NOTHING_ON_CLOSE);
