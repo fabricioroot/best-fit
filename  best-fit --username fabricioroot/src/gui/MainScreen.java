@@ -538,10 +538,11 @@ public class MainScreen extends javax.swing.JApplet {
         this.finalMainMemory = null;
         this.processesQueue = null;
         this.processCounter = 0;
-
-        this.st.getJDialogNextStep().setVisible(false);
-        this.st.setJDialogNextStep(null);
-        this.st = null;
+        if(this.st != null) {
+            this.st.getJDialogNextStep().setVisible(false);
+            this.st.setJDialogNextStep(null);
+            this.st = null;
+        }
         System.gc();
     }//GEN-LAST:event_jButtonRestartActionPerformed
     
