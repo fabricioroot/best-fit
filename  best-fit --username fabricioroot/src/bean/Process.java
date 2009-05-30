@@ -1,7 +1,7 @@
 /*
  * Process.java
  *
- * Created on January 26th by Fabricio Reis.
+ * Created on January 26th by Fabricio Reis
  */
 
 package bean;
